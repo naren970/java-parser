@@ -5,7 +5,7 @@ pipeline{
         stage("Project Info"){
 
             steps{
-                sh "This is maven pipeline"
+                sh "echo 'This is maven pipeline'"
 
             }
         }
