@@ -2,8 +2,8 @@ pipeline{
     agent any
     parameters{
         choice(
-            choices :'main\ndevelop\npre-prod'
-            description: 'Select the target environment'
+            choices :'main\ndevelop\npre-prod',
+            description: 'Select the target environment',
             name: 'branch_name' 
         )
     }
