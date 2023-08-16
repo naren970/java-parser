@@ -3,7 +3,7 @@ pipeline{
     parameters{
         choice(
             choices :'main\ndevelop\npre-prod'
-            description: 'Please branch name'
+            description: 'Select the target environment'
             name: 'branch_name' 
         )
     }
