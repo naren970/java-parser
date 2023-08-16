@@ -21,6 +21,8 @@ pipeline{
         stage("Build"){
             steps{
                 sh 'mvn compile'
+                sh 'mvn package'
+                sh 'ls -al targets'
             }
         }
 
